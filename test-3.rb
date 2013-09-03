@@ -7,7 +7,7 @@ describe "www.google.com" do
   before { browser.goto "http://google.com" } 
   after { browser.close }
  
-  it "It should search for WATiR" do
+  it "It should search for WATiR in Google" do
     browser.text_field(:name => "q").set "watir"
     browser.button.click 
     browser.div(:id => "resultStats").wait_until_present
