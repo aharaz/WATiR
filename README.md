@@ -1,2 +1,2 @@
-WATiR
+WATiR is GOOD
 =====
