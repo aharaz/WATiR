@@ -5,7 +5,7 @@ require "headless"
  
  puts ENV['PATH']
 describe "www.google.com" do
-  let(:browser) { @browser ||= Watir::Browser.new :ff } 
+  let(:browser) { @browser ||= Watir::Browser.new :headless } 
   before { browser.goto "http://google.com" } 
   after { browser.close }
  
