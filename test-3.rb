@@ -4,7 +4,7 @@ require "watir-webdriver"
 require "headless"
  
 describe "www.google.com" do
-  let(:browser) { @browser ||= Watir::Browser.new :firefox } 
+  let(:browser) { @browser ||= Watir::Browser.new :chrome } 
   before { browser.goto "http://google.com" } 
   after { browser.close }
  
