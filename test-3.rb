@@ -3,6 +3,7 @@ require "rspec"
 require "watir-webdriver"
 require "headless"
  
+ puts ENV['PATH']
 describe "www.google.com" do
   let(:browser) { @browser ||= Watir::Browser.new :chrome } 
   before { browser.goto "http://google.com" } 
