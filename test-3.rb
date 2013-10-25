@@ -1,6 +1,7 @@
 require "rubygems"
 require "rspec"
 require "watir-webdriver"
+reqire "headless"
  
 describe "www.google.com" do
   let(:browser) { @browser ||= Watir::Browser.new :firefox } 
